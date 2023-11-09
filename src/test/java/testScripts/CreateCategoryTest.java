@@ -27,6 +27,8 @@ public class CreateCategoryTest extends BaseClass {
 		addcategory.setName(categoryName);
 		addcategory.clickSave();
 		
+		//This is modified in github and verifying pull or not
+		
 		soft.assertTrue(category.getSuccessMessage().contains("Success"));
 		boolean isPresent = false;
 		List<WebElement> categoryList=category.getCategoryList();
